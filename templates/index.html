@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- LEAFLET -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+      integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+        crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+      integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+      crossorigin=""></script>
+    <style>#mapid{ height: 100% }</style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='leaflet.awesome-markers.css') }}">
+    <script src="{{ url_for('static', filename='leaflet.awesome-markers.js') }}"></script>
+    <!-- END LEAFLET -->
+
+    <title>KAFKA LIVE</title>
+
+  </head>
+  <body>
+    <h1>London Bus Map</h1>
+
+    <!-- LEAFLET -->
+    <div id="mapid" style = "width:900px; height:580px;"></div>
+    <script src="../static/leaf.js"></script>
+    <!-- END LEAFLET -->
+
+  </body>
+</html>
